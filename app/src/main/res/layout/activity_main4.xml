@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    tools:context=".MainActivity3">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="806dp"
+                android:layout_height="303dp"
+                android:layout_marginBottom="448dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/atlantispic" />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="53dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:onClick="onBackPressed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group5" />
+
+            <TextView
+                android:id="@+id/theatlantis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="THE ATLANTIS"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.124"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DUBAI"
+                android:textColor="#E1E2E1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/theatlantis" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="148.64dp"
+                android:layout_height="23.02dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/stars" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="$200"
+                android:textColor="#FFFFFF"
+
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="449dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="380dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.048"
+                app:srcCompat="@drawable/booknow" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="-27dp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:srcCompat="@drawable/details" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/hotelpic1" />
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/hotelpic2" />
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView25"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/hotelpic3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"
+                app:srcCompat="@drawable/group8" />
+
+            <ImageView
+                android:id="@+id/facilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="31dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView15"
+                app:srcCompat="@drawable/facilities" />
+
+            <ImageView
+                android:id="@+id/reviews"
+                android:layout_width="509dp"
+                android:layout_height="905dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.612"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/facilities"
+                app:srcCompat="@drawable/reviwes" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

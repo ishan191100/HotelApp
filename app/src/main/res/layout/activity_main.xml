@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#0B0B0B"
+                android:text="Top"
+                android:textColor="#353131"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/H1"
+                android:layout_width="409dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/card1" />
+
+                    <TextView
+                        android:id="@+id/Dubai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Dubai"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card1"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/card1"
+                        app:layout_constraintTop_toTopOf="@+id/card1"
+                        app:layout_constraintVertical_bias="0.752" />
+
+                    <ImageView
+                        android:id="@+id/card2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/card1"
+                        app:layout_constraintTop_toTopOf="@id/card1"
+                        app:srcCompat="@drawable/card2" />
+
+                    <TextView
+                        android:id="@+id/Jaipur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Jaipur"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/Dubai"
+                        app:layout_constraintEnd_toEndOf="@+id/card2"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/card1" />
+
+                    <ImageView
+                        android:id="@+id/card3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintStart_toEndOf="@id/card2"
+                        app:layout_constraintTop_toTopOf="@id/card2"
+                        app:srcCompat="@drawable/card3" />
+
+                    <TextView
+                        android:id="@+id/Greece"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Greece"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/Jaipur"
+                        app:layout_constraintEnd_toEndOf="@+id/card3"
+                        app:layout_constraintHorizontal_bias="0.973"
+                        app:layout_constraintStart_toEndOf="@+id/card2"
+                        app:layout_constraintStart_toStartOf="@+id/card3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#0B0B0B"
+                android:text="Popular"
+                android:textColor="#353131"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txt1"
+                app:layout_constraintTop_toBottomOf="@id/H1" />
+
+            <HorizontalScrollView
+                android:id="@+id/H2"
+                android:layout_width="409dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="atlantis"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/card6" />
+
+                    <TextView
+                        android:id="@+id/Atlantis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Atlantis"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card6"
+                        app:layout_constraintHorizontal_bias="0.649"
+                        app:layout_constraintStart_toStartOf="@+id/card6"
+                        app:layout_constraintTop_toTopOf="@+id/card6"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/at1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Dubai"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Atlantis"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/card5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/card6"
+                        app:layout_constraintTop_toTopOf="@id/card6"
+                        app:srcCompat="@drawable/card5" />
+
+                    <TextView
+                        android:id="@+id/Oberoi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Oberoi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card5"
+                        app:layout_constraintHorizontal_bias="0.649"
+                        app:layout_constraintStart_toEndOf="@+id/card6"
+                        app:layout_constraintTop_toTopOf="@+id/card5"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/ob1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Jaipur"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card5"
+                        app:layout_constraintStart_toEndOf="@+id/card6"
+                        app:layout_constraintTop_toBottomOf="@+id/Oberoi"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/card4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/card5"
+                        app:layout_constraintTop_toTopOf="@id/card5"
+                        app:srcCompat="@drawable/card4" />
+
+                    <TextView
+                        android:id="@+id/DAVINCI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="DAVINCI"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card4"
+                        app:layout_constraintHorizontal_bias="0.377"
+                        app:layout_constraintStart_toEndOf="@+id/card5"
+                        app:layout_constraintTop_toTopOf="@+id/card4"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/athens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Athens"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card4"
+                        app:layout_constraintStart_toStartOf="@+id/card4"
+                        app:layout_constraintTop_toBottomOf="@+id/DAVINCI"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:shadowColor="#0B0B0B"
+                android:text="Best Deals"
+                android:textColor="#353131"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txt2"
+                app:layout_constraintTop_toBottomOf="@id/H2" />
+
+            <HorizontalScrollView
+                android:id="@+id/H3"
+                android:layout_width="409dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="80dp">
+
+                    <ImageView
+                        android:id="@+id/card61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/card6" />
+
+                    <TextView
+                        android:id="@+id/Atlantis1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Atlantis"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card61"
+                        app:layout_constraintHorizontal_bias="0.649"
+                        app:layout_constraintStart_toStartOf="@+id/card61"
+                        app:layout_constraintTop_toTopOf="@+id/card61"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/at11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Dubai"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card61"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Atlantis1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/card51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/card61"
+                        app:layout_constraintTop_toTopOf="@id/card61"
+                        app:srcCompat="@drawable/card5" />
+
+                    <TextView
+                        android:id="@+id/Oberoi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="Oberoi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card51"
+                        app:layout_constraintHorizontal_bias="0.649"
+                        app:layout_constraintStart_toEndOf="@+id/card61"
+                        app:layout_constraintTop_toTopOf="@+id/card51"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/ob11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Jaipur"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card51"
+                        app:layout_constraintStart_toEndOf="@+id/card61"
+                        app:layout_constraintTop_toBottomOf="@+id/Oberoi1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/card41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/card51"
+                        app:layout_constraintTop_toTopOf="@id/card51"
+                        app:srcCompat="@drawable/card4" />
+
+                    <TextView
+                        android:id="@+id/DAVINCI1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginEnd="210dp"
+                        android:layout_marginRight="181dp"
+                        android:text="DAVINCI"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/card41"
+                        app:layout_constraintHorizontal_bias="0.377"
+                        app:layout_constraintStart_toEndOf="@+id/card51"
+                        app:layout_constraintTop_toTopOf="@+id/card41"
+                        app:layout_constraintVertical_bias="0.743" />
+
+                    <TextView
+                        android:id="@+id/athens1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginLeft="33dp"
+                        android:text="Athens"
+                        android:textColor="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/card41"
+                        app:layout_constraintStart_toStartOf="@+id/card41"
+                        app:layout_constraintTop_toBottomOf="@+id/DAVINCI1"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottomnav" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav"
+        app:srcCompat="@drawable/bookm" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="newact"
+        app:layout_constraintBottom_toBottomOf="@+id/nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/searchi" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/nav"
+        app:srcCompat="@drawable/person" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

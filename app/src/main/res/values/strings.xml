@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hotel</string>
+    <string name="rect">rect</string>
+    <string name="botnav">botnav</string>
+    <string name="card1">card1</string>
+    <string name="card2">card2</string>
+</resources>
